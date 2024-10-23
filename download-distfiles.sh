@@ -28,7 +28,9 @@ check_source() {
     fname="${fname:-$(basename "${url}")}"
 
     local dest_path="${distfiles}/${fname}"
-    echo "${checksum}  ${dest_path}" | sha256sum -c
+    echo "${checksum}  ${dest_path}" > tmp.sha256
+    sha256sum --check tmp.sha256
+    rm tmp.sha256
 }
 
 set -e
