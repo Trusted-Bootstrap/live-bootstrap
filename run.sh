@@ -16,4 +16,5 @@ qemu-system-x86_64 -accel $ACEL \
                    -m 4096M  -smp 2 \ 
                    -drive file=target/boot.img,format=raw \ 
                    -machine kernel-irqchip=split \ 
-                   -cpu host
+                   -cpu host \ 
+                   --nographic
