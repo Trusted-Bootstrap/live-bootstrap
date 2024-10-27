@@ -21,6 +21,8 @@ $ ./run.sh
 
 ## TODO
 
-- [ ] Add build and run customization
-- [ ] Remove unused and unnecessary sources in image
+- [ ] Build logging
+- [ ] Build from scratch without rootfs.py script
+- [ ] Build and run customization
+- [ ] Remove unused and unnecessary sources and steps in image
 - [ ] Strip down Linux kernel build
